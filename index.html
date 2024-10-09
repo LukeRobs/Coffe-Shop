@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Cardapio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#local">Local</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+        <!--Main-->
+        <main>
+            <!-- Carrosel de imagens -->
+            <header id="carousel-coffee" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1672306319681-7b6d7ef349cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        class="d-block w-100" 
+                        alt="graos de café">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Os melhores Grãos</h5>
+                        <p>Trabalhamos com ingredientes selecionados, da melhor qualidade, do jeito que você merece!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        class="d-block w-100" 
+                        alt="Coffee Shop">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>A melhor experiência gastronômica de café</h5>
+                        <p>Você vai experienciar os melhores cafés do Brasil e do mundo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1516953951091-5051d8bebb74?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        class="d-block w-100" 
+                        alt="ambiente coffee shop">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Um ambiente pensado para você  e sua familia</h5>
+                        <p>Nosso restaurante foi pensado para te fornecer um ambiente confortável, tranquilo e leve</p>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-coffee" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-coffee" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </header>
+
+            <!--Quote-->
+            <figure>
+                <blockquote class="blockquote">
+                <h3 class="fw-lighter text-center fst-italic mt-5">
+                    "O amor é um café às oito da manhã numa segunda."
+                </h3>
+                </blockquote>
+                <figcaption class="blockquote-footer text-center">
+                    <cite title="Source Title">Coffee Shop</cite>
+                </figcaption>
+            </figure>
+
+            <!-- Sobre Cards -->
+            <section id="about" class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="img-fluid rounded-start" 
+                                        alt="coffe express">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Somos apaixonados por Café</h5>
+                                    <h6 class="card-subtitle text-muted mb-3">Acreditamos que o Café pode mudar o (seu) mundo</h6>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt 
+                                        mollitia doloribus quo reiciendis, necessitatibus officiis dolorem autem aspernatur 
+                                        iure obcaecati fugit aliquam magnam asperiores? Libero, tenetur? Odio, sint deserunt?
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="img-fluid rounded-start" 
+                                        alt="coffe express">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Equipe premium de baristas</h5>
+                                    <h6 class="card-subtitle text-muted mb-3">Profissionais especializados para levar o melhor café até a sua mesa</h6>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt 
+                                        mollitia doloribus quo reiciendis, necessitatibus officiis dolorem autem aspernatur 
+                                        iure obcaecati fugit aliquam magnam asperiores? Libero, tenetur? Odio, sint deserunt?
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Menu -->
+            <section id="menu" class="container mt-5 mb-5">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="espresso-tab" data-bs-toggle="tab" data-bs-target="#espresso-tab-pane" type="button" role="tab" aria-controls="espresso-tab-pane" aria-selected="true">Expressos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="cappuccino-tab" data-bs-toggle="tab" data-bs-target="#cappuccino-tab-pane" type="button" role="tab" aria-controls="cappuccino-tab-pane" aria-selected="false">Cappuccinos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="gelados-tab" data-bs-toggle="tab" data-bs-target="#gelados-tab-pane" type="button" role="tab" aria-controls="gelados-tab-pane" aria-selected="false">gelados</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="especiais-tab" data-bs-toggle="tab" data-bs-target="#especiais-tab-pane" type="button" role="tab" aria-controls="especiais-tab-pane" aria-selected="false">especiais</button>
+                      </li>
+                  </ul>
+
+                  <div class="tab-content" id="coffeesTabContent">
+                    <div class="tab-pane fade show active" id="espresso-tab-pane" role="tabpanel" aria-labelledby="espresso-tab" tabindex="0">
+                        <!--Card Expresso-->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1630338606772-392095666116?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="black coffee">
+                                    <div class="card-body card-body-menu">
+                                    <h5 class="card-title">Café expresso</h5>
+                                    <p class="card-text">R$6.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1503240778100-fd245e17a273?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top"
+                                        alt="Latte Coffee">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Latte Coffee</h5>
+                                        <p class="card-text">R$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1523146948278-0043b8d83d19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="Macchiato coffee">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Macchiato coffee</h5>
+                                        <p class="card-text">R$25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://img.freepik.com/free-photo/high-angle-coffee-cup-heart-shaped-cookies_23-2148381089.jpg?w=1380&t=st=1728495497~exp=1728496097~hmac=68596f5592d83494db5b0cb348a09e6f79de3098d9c3665b681a48f5da7dc477" 
+                                        class="card-img-top" 
+                                        alt="Espresso con panna">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Espresso con panna</h5>
+                                        <p class="card-text">R$22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://plus.unsplash.com/premium_photo-1674930127256-53a3a3d7f056?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="Coffee decafeinado">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Café Espresso Duplo</h5>
+                                        <p class="card-text">R$13.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card  card-menu">
+                                    <img src="https://images.unsplash.com/photo-1611854778891-6cff1a7fd8d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="American Coffee">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Café Americano</h5>
+                                        <p class="card-text">R$10.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="cappuccino-tab-pane" role="tabpanel" aria-labelledby="cappuccino-tab" tabindex="0">
+                        <!--Card Cappuccino-->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1473923377535-0002805f57e8?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="Cappuccino">
+                                    <div class="card-body card-body-menu">
+                                    <h5 class="card-title">Cappuccino Classico</h5>
+                                    <p class="card-text">R$10.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1590233722406-fbec1abdde3f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top"
+                                        alt="Cappuccino Chocolate">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Cappuccino com cholate</h5>
+                                        <p class="card-text">R$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://uniquecafes.com.br/wp-content/uploads/2022/04/Imagem-destaque-drink-Mocha.webp" 
+                                        class="card-img-top" 
+                                        alt="Mocha coffee">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Cappuccino Mocha</h5>
+                                        <p class="card-text">R$25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1513244608388-32427255be63?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="Double Cappuccino">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Double Cappuccino</h5>
+                                        <p class="card-text">R$22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.getrecipekit.com/20230602102114-pistachio-latte.jpeg?aspect_ratio=16:9&quality=90&" 
+                                        class="card-img-top" 
+                                        alt="Cappuccino Pistache">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Cappuccino Pistache</h5>
+                                        <p class="card-text">R$28.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card  card-menu">
+                                    <img src="https://images.unsplash.com/photo-1603903631623-3a1f769e45cf?q=80&w=1994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="Ice cream Cappuccino">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Cappuccino Com Sorvete</h5>
+                                        <p class="card-text">R$30.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="gelados-tab-pane" role="tabpanel" aria-labelledby="gelados-tab" tabindex="0">
+                        <!--Card Ice Coffe-->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1495220390995-1487cfe6810c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="Ice coffee">
+                                    <div class="card-body card-body-menu">
+                                    <h5 class="card-title">Café Gelado Simples</h5>
+                                    <p class="card-text">R$6.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://catracalivre.com.br/cdn-cgi/image/f=auto,q=60,width=1080,height=99999,fit=scale-down/wp-content/uploads/2023/11/cafe-gelado-com-limao.jpg" 
+                                        class="card-img-top"
+                                        alt="Ice Coffee Limon">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Expresso Com Limão</h5>
+                                        <p class="card-text">R$10.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://www.estadao.com.br/resizer/v2/ZJKGWWRLCRFKPAEKRRYZSX3BG4.jpg?quality=80&auth=2503bad58aab268178fa1b49827d8f2451b68231e53dba2bf71048dfd9010c90&width=720&height=503&smart=true" 
+                                        class="card-img-top" 
+                                        alt="Ice Coffe tonic and orange">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Expresso Tonico & Laranja</h5>
+                                        <p class="card-text">R$18.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-cafe-gelado.jpg" 
+                                        class="card-img-top" 
+                                        alt="Ice Milk Coffee">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Ice Latte</h5>
+                                        <p class="card-text">R$20.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://docerar.pt/wp-content/uploads/2019/08/frappe-de-cafe.jpg" 
+                                        class="card-img-top" 
+                                        alt="Frappé">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Frappé</h5>
+                                        <p class="card-text">R$22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card  card-menu">
+                                    <img src="https://blog.coffeemais.com/wp-content/uploads/2022/06/smoothie-de-cafe-topo.jpg" 
+                                        class="card-img-top" 
+                                        alt="Smoothie Coffee">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Smoothie Coffee</h5>
+                                        <p class="card-text">R$25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="especiais-tab-pane" role="tabpanel" aria-labelledby="especiais-tab" tabindex="0">
+                        <!--Especials-->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://guiadacozinha.com.br/wp-content/uploads/2019/11/torta-gelada-cafe-chocolate.jpg" 
+                                        class="card-img-top" 
+                                        alt="coffee pie">
+                                    <div class="card-body card-body-menu">
+                                    <h5 class="card-title">Torta de Café</h5>
+                                    <p class="card-text">R$12.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1718605598745-569f2a41bea0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top"
+                                        alt="Vegan Coffee">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Café Vegano</h5>
+                                        <p class="card-text">R$10.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://plus.unsplash.com/premium_photo-1670333242784-46b220ef90a2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="croissant">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Croissant</h5>
+                                        <p class="card-text">Frango: R$10.00</p>
+                                        <p class="card-text">Queijo: R$8.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1457296795659-6f458be7a874?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="Cupcakes">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Cupcakes</h5>
+                                        <p class="card-text">R$12.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-menu">
+                                    <img src="https://images.unsplash.com/photo-1661529548674-8dae0330fe04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                        class="card-img-top" 
+                                        alt="Hot chocolate">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Chocolate Quente</h5>
+                                        <p class="card-text">R$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card  card-menu">
+                                    <img src="https://www.minhareceita.com.br/app/uploads/2020/09/Fondue-de-Coxinha-com-Queijo-desktop.jpg" 
+                                        class="card-img-top" 
+                                        alt="Porção de coxinha">
+                                    <div class="card-body card-body-menu">
+                                        <h5 class="card-title">Porção de coxinha</h5>
+                                        <p class="card-text">R$28.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="container text-center mb-5" id="local">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#localModal">
+                    Quero conhecer o Coffee Shop
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="localModal" tabindex="-1" aria-labelledby="localModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="localModalLabel">Estamos te esperando!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Te esperamos na rua do bom Jesus nº 00 - Recife/PE 
+                            </p>
+                            <iframe style="width: 100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+                            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Rua%20do%20bom%20jesus%20Recife+(Coffee%20Shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            </iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+             </section>
+        </main>
+        <!--Rodapé-->
+        <footer class="text-center bg-dark p-5 mt-5 text-light">
+            <img width="80" src="assets/images/logo.png" alt="Logotipo Coffee shop">
+            <p class="mt-3 mb-0 fw-bold">
+                Coffee Shop | Transformando sua experiencia com café única
+            </p>
+            <p>
+                (81)9 0000-0000
+            </p>
+            <p>
+                © 2024 | Todos os direitos reservados.
+            </p>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
